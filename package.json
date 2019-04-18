@@ -1,0 +1,12 @@
+{
+  "name": "hanekawa-tsubasa-com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "zip bundle.zip index.js && aws s3 cp bundle.zip s3://hanekawa-tsubasa-com/api/bundle.zip"
+  },
+  "devDependencies": {
+    "prettier": "1.17.0"
+  }
+}
