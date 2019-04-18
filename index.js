@@ -3,6 +3,9 @@ exports.handler = async event => {
 
   const response = {
     statusCode,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8"
+    },
     body: JSON.stringify({
       status: `${statusCode} Not Found`,
       message: "何でもは知らないわよ。知ってることだけ"
